@@ -3,23 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Rama</title>
 
-    <!-- css external -->
-    <link rel="stylesheet" href="style.css">
+    <!-- CSS External -->
+    <link rel="stylesheet" href="/css/style.css">
+
+    <!-- tailwind CSS CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 </head>
 
 <body>
-    <!-- header content -->
-    <header></header>
+    <!-- header Content -->
+    <header class="flex justify-between items-center p-4">
+        <!-- Logo -->
+        <div class="logo"></div>
 
-    <!-- main content -->
-    <main></main>
+         <!-- Navigation Menu -->
+        <nav class="flex">
+            <a class="border rounded p-2" href="#home-page">Home</a>
+            <a class="border rounded p-2" href="#our-profile-page">Our Profile</a>
+            <a class="border rounded p-2" href="#portofolio-page">Portofolio</a>
+            <a class="border rounded p-2" href="#message-us-page">Message Us</a>
+        </nav>
+    </header>
 
-    <!-- footer content -->
-    <footer></footer>
+    <hr>
 
-    <!-- javascript external -->
+    <!-- Main Content -->
+    <main>
+        <!-- Home Page -->
+        <section id="home-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="welcome-speech">Welcome to Our Website</h2>
+            <p class="mt-2">We are glad to have you here. Explore our service and offerings.</p>
+        </section>
+
+        <hr>
+
+        <!-- Our Profile Page -->
+        <section id="our-profile-page" class="min-h-[500px] text-center content-center">
+            <h2 class="text-xl font-bold" id="our-profile">About Rama Company</h2>
+            <p class="mt-2">Rama Company is a leading provider of innovative solutions in the technology industry. We are committed to delivering high-quality products and services that meet the needs of our clients.</p>
+        </section>
+
+        <hr>
+
+        <!-- portofolio -->
+        <section id="portofolio-page" class="min-h-[500px] text-center content-center">
+                <h2 class="text-xl font-bold" id="portofolio">Our Portofolio</h2>
+                <p class="mt-2">Explore our latest projects and achievements.</p>
+            
+        </section>
+
+        <hr>
+
+        <!-- Message Us Page -->
+        <section id="message-us-page" class="min-h-[500px] mx-8">
+            <header>
+                <h2 class="text-xl font-bold" id="message-us">Message Us</h2>
+                <p class="mt-2">We would love to hear from you! Please fill out the form below to send us a message.</p>
+            </header>
+
+            <form>
+                <div class="mb-4">
+                    <label class="block mb-2" for="name">Name:</label>
+                    <input class="w-full p-2 border rounded" type="text" id="name" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="email">Email:</label>
+                    <input class="w-full p-2 border rounded" type="email" id="email" required>
+                </div>
+                <div class="mb-4">
+                    <label class="block mb-2" for="message">Message:</label>
+                    <textarea class="w-full p-2 border rounded" id="message" rows="4" required></textarea>
+                </div>
+                <button class="bg-blue-500 text-white p-2 rounded" type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer Content -->
+    <footer>
+        <div class="text-center p-4">
+            &copy; 2024 Rama Company. All rights reserved.
+        </div>
+    </footer>
+
+    <!-- JavaScript External -->
     <script src="js/script.js"></script>
 </body>
 
